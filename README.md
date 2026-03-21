@@ -1,6 +1,6 @@
 # ERP System (Inventory, Accounting, POS, Payroll)
 
-A full-stack ERP system designed for real-world business operations.
+A full-stack ERP system designed to handle real-world business operations including accounting, inventory, payroll, and POS workflows used in daily transactions.
 
 ![ERP Dashboard Screenshot](Screenshot%20(686).png)
 > Screenshot ng main Dashboard (Inventory & Accounting Overview)
