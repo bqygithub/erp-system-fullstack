@@ -17,6 +17,12 @@ A full-stack ERP system designed to handle real-world business operations includ
 - Database: PostgreSQL
 - Other: Complex SQL queries, joins, modular architecture
 
+## System Design
+- Multi-module ERP architecture
+- Relational database design using PostgreSQL
+- Use of joins and views for financial reporting
+- Separation of frontend and backend (API-based architecture)
+  
 ## Highlights
 - Real-world business workflows implemented
 - Advanced database operations
