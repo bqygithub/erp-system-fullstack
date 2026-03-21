@@ -3,7 +3,7 @@
 A full-stack ERP system designed to handle real-world business operations including accounting, inventory, payroll, and POS workflows used in daily transactions.
 
 ![ERP Dashboard Screenshot](Screenshot%20(686).png)
-> Screenshot ng main Dashboard (Inventory & Accounting Overview)
+> Screenshot main Dashboard (ERP System)
 
 ## Features
 - **Inventory Management** – Track stock levels, items, suppliers
