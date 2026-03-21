@@ -10,6 +10,7 @@ A full-stack ERP system designed for real-world business operations.
 
 ## Tech Stack
 - React.js
+- Nextjs
 - Node.js (Express)
 - PostgreSQL
 
