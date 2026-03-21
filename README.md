@@ -28,6 +28,15 @@ A full-stack ERP system designed to handle real-world business operations includ
 - Advanced database operations
 - Clean, scalable, and modular code design
 
+## 🎯 Purpose
+This system was built to solve real-world business challenges such as:
+- Manual accounting errors
+- Inventory tracking issues
+- Inefficient payroll processing
+
+ ## 💡 Why This Project Matters
+This project demonstrates the ability to design and build complex business systems from the ground up, focusing on scalability, maintainability, and real-world usability.
+
 ## Author
 Baylon Yap  
 GitHub: [bqygithub](https://github.com/bqygithub)
