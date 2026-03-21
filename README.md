@@ -23,5 +23,5 @@ A full-stack ERP system designed for real-world business operations.
 Baylon Yap
 https://github.com/bqygithub
 
-![Screenshot ng Dashboard](https://github.com/bqygithub/erp-accounting-system/raw/main/screenshot(686).png)
 
+![Screenshot ng Dashboard](screenshots/screenshot(686).png)
