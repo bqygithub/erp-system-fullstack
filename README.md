@@ -1,137 +1,74 @@
-# ERP System Fullstack
+# Quenta ERP — Full-Stack ERP System
 
-A full-stack multi-module ERP platform designed for real-world business operations including inventory management, accounting workflows, POS transactions, payroll concepts, operational dashboards, and business process automation.
+A multi-tenant SaaS ERP platform built for Philippine SMEs. Designed and coded solo under JD Solutions Ph.
 
-Built using Next.js, React, Node.js, and PostgreSQL with a focus on scalable architecture, modular workflows, and real-world usability.
+Deployed and actively being developed — some modules are production-ready, others still being finished.
 
+**Live:** https://quenta-erp.vercel.app
 ![ERP Dashboard Screenshot](dashboard.png)
 
-> Main ERP Dashboard Screenshot
+---
+
+## What It Does
+
+Quenta ERP covers the core operations of a small-to-medium business:
+
+- **POS** — sales transactions, receipt printing, Z-reading, session close with auto journal posting
+- **Inventory** — stock management, supplier tracking, purchase receiving with inventory deduction
+- **Payroll** — BIR TRAIN Law withholding, SSS/PhilHealth/Pag-IBIG, DTR, payslip generation
+- **Accounting** — Chart of Accounts, journal entries, general ledger, financial reports (Income Statement, Balance Sheet, Cash Flow, AR/AP Aging)
+- **BIR Compliance** — SAWT, QAP, SLSP, MAP report generation
+- **AI Business Assistant** — Anthropic API + custom MCP server, business owners can query their own data in natural language (finishing production testing)
+- **PWA Modules** — PostWatch (security guard management), Pandesal Rider (delivery tracking), Grocery POS
+- **Marketplace Hub** — multi-channel product publishing (in development)
 
 ---
 
-# Core Features
+## Tech Stack
 
-## Inventory Management
+**Frontend**
+- Next.js 14
+- React
+- Tailwind CSS
+- TypeScript
 
-* Product and stock management
-* Supplier tracking
-* Warehouse and stock monitoring
-* Inventory workflows and operational controls
+**Backend**
+- Node.js (Next.js API routes)
+- PostgreSQL (hosted on Supabase)
+- 20+ schemas, multi-tenant architecture
 
-## POS (Point of Sale)
-
-* Fast transaction workflows
-* Cash handling concepts
-* Receipt and sales processing
-* Mobile/PWA-oriented POS concepts
-
-## Accounting System
-
-* Journal entry workflows
-* Debit and credit processing
-* Ledger and financial reporting concepts
-* PostgreSQL relational accounting structure
-
-## Payroll & Attendance Concepts
-
-* Payroll processing workflows
-* Employee management concepts
-* Attendance and operational monitoring ideas
-
-## Dashboards & Monitoring
-
-* Operational dashboards
-* Business workflow visibility
-* Reporting and monitoring concepts
-* Real-time operational insights
-
-## Multi-Tenant / Multi-Company Architecture
-
-* Scalable company structure
-* Tenant-aware database design
-* Modular ERP architecture for different business types
+**Infrastructure**
+- Supabase (database, auth, storage)
+- Vercel (hosting, serverless)
+- n8n (automation workflows)
 
 ---
 
-# Tech Stack
+## Architecture Highlights
 
-## Frontend
-
-* React.js
-* Next.js
-* Tailwind CSS
-
-## Backend
-
-* Node.js
-* API-based architecture
-
-## Database
-
-* PostgreSQL
-* Complex SQL queries
-* Relational schema design
-* Reporting joins and workflows
+- Multi-tenant from day one — every query filters by `tenant_id` and `company_id` from server-side session
+- 20+ PostgreSQL schemas — one per ERP module
+- Server-side session only — `tenant_id` and `company_id` never come from client
+- Double-entry accounting engine — all financial transactions post to general ledger
+- PWA-ready modules — service worker, offline support, installable on mobile
+- AI layer — Anthropic Messages API with function calling, custom MCP server
 
 ---
 
-# Architecture Highlights
+## My Role
 
-* Multi-module ERP architecture
-* API-driven frontend/backend structure
-* PostgreSQL relational database design
-* Scalable modular workflows
-* Real-world operational system concepts
-* Mobile/PWA workflow exploration
-* Business process automation concepts
-
----
-
-# Business Problems Addressed
-
-This project was built to help solve real-world operational challenges such as:
-
-* Manual accounting errors
-* Inventory tracking inefficiencies
-* Workflow bottlenecks
-* Reporting visibility issues
-* Business monitoring challenges
-* Operational process automation
+Designed and built everything:
+- System architecture and database schema design
+- All frontend interfaces and components
+- All backend API routes (40+)
+- PostgreSQL query logic and reporting
+- Multi-tenant session and security layer
+- PWA service workers and manifests
+- n8n automation workflows
+- AI Business Assistant architecture
 
 ---
 
-# Why This Project Matters
+## GitHub
 
-This project demonstrates the ability to:
-
-* Build large-scale business systems
-* Design scalable PostgreSQL architectures
-* Create real-world workflows
-* Develop operational dashboards
-* Connect frontend and backend systems
-* Solve practical business problems through software
-
-The focus of this project is not just CRUD functionality, but building practical systems designed around real operational workflows.
-
----
-
-# My Role
-
-Designed and built:
-
-* System architecture
-* Database schema design
-* Frontend interfaces
-* Backend API workflows
-* Operational dashboards
-* ERP module concepts
-* PostgreSQL query logic
-* Multi-company workflow structures
-
----
-
-# GitHub Profile
-
-GitHub: [bqygithub](https://github.com/bqygithub)
-
+[bqygithub](https://github.com/bqygithub)
